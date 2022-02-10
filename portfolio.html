@@ -6,33 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 
 <body>
+
     <header>
-        <a href="">WebStudio</a>
+        <a class="logo link" href=""><span class="web">Web</span><span class="studio">Studio</span></a>
         <nav>
-            <ul>
+            <ul class="site-nav list">
                 <li>
-                    <a href="">Студия</a>
+                    <a class="link" href="./index.html">Студия</a>
                 </li>
                 <li>
-                    <a href="">Портфолио</a>
+                    <a class="link" href="./portfolio.html">Портфолио</a>
                 </li>
                 <li>
-                    <a href="">Контакты</a>
+                    <a class="link" href="">Контакты</a>
                 </li>
             </ul>
         </nav>
-        <ul>
+        <ul class="auth-nav list">
             <li>
-                <a href="mailto:info@example.com">info@example.com</a>
+                <a class="link" href="mailto:info@example.com">info@example.com</a>
             </li>
             <li>
-                <a href="tel:+380991111111">+38 099 111 11 11</a>
+                <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
             </li>
         </ul>
 
@@ -40,82 +45,90 @@
 
     <main>
 
-        <!-- Секция Фильтры -->
-        <section>
-            <h1>Фильтры</h1>
-            <ul>
-                <li><button type="button">Все</button></li>
-                <li><button type="button">Веб-сайты</button></li>
-                <li><button type="button">Приложения</button></li>
-                <li><button type="button">Дизайн</button></li>
-                <li><button type="button">Маркетинг</button></li>
-            </ul>
-        </section>
-
         <!-- Секция  Примеры работ-->
-        <section>
-            <ul>
+        <section class="section-work">
+            <h1 class="hidden">Наши работы</h1>
+            <ul class="list">
                 <li>
-                    <a href="">
+                    <button class="btn-portfolio" type="button">Все</button>
+                </li>
+                <li>
+                    <button class="btn-portfolio" type="button">Веб-сайты</button>
+                </li>
+                <li>
+                    <button class="btn-portfolio" type="button">Приложения</button>
+                </li>
+                <li>
+                    <button class="btn-portfolio" type="button">Дизайн</button>
+                </li>
+                <li>
+                    <button class="btn-portfolio" type="button">Маркетинг</button>
+                </li>
+            </ul>
+
+        <!-- Список карточек - Примеры работ -->
+            <ul class="list">
+                <li>
+                    <a class="link" href="">
                         <img src="./img-team.jpg" alt="Наша команда" width="370" height="294">
-                        <h2>Технокряк</h2>
-                        <p>Веб-сайт</p>
+                        <h2 class="work-title">Технокряк</h2>
+                        <p class="work-text">Веб-сайт</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="link" href="">
                         <img src="./img-sport.jpg" alt="Спорт" width="370" height="294">
-                        <h2>Постер New Orlean vs Golden Star</h2>
-                        <p>Дизайн</p>
+                        <h2 class="work-title">Постер New Orlean vs Golden Star</h2>
+                        <p class="work-text">Дизайн</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="link" href="">
                         <img src="./img-restaurant.jpg" alt="Ресторан" width="370" height="294">
-                        <h2>Ресторан Seafood</h2>
-                        <p>Приложение</p>
+                        <h2 class="work-title">Ресторан Seafood</h2>
+                        <p class="work-text">Приложение</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="link" href="">
                         <img src="./img-headphones.jpg" alt="Наушники" width="370" height="294">
-                        <h2>Проект Prime</h2>
-                        <p>Маркетинг</p>
+                        <h2 class="work-title">Проект Prime</h2>
+                        <p class="work-text">Маркетинг</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="link" href="">
                         <img src="./img-boxes.jpg" alt="Коробочки" width="370" height="294">
-                        <h2>Проект Boxes</h2>
-                        <p>Приложение</p>
+                        <h2 class="work-title">Проект Boxes</h2>
+                        <p class="work-text">Приложение</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="link" href="">
                         <img src="./img-desktop.jpg" alt="Десктоп" width="370" height="294">
-                        <h2>Inspiration has no Borders</h2>
-                        <p>Веб-сайт</p>
+                        <h2 class="work-title">Inspiration has no Borders</h2>
+                        <p class="work-text">Веб-сайт</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="link" href="">
                         <img src="./img-book.jpg" alt="Книга" width="370" height="294">
-                        <h2>Издание Limited Edition</h2>
-                        <p>Дизайн</p>
+                        <h2 class="work-title">Издание Limited Edition</h2>
+                        <p class="work-text">Дизайн</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="link" href="">
                         <img src="./img-label.jpg" alt="Ярлык" width="370" height="294">
-                        <h2>Проект LAB</h2>
-                        <p>Маркетинг</p>
+                        <h2 class="work-title">Проект LAB</h2>
+                        <p class="work-text">Маркетинг</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="link" href="">
                         <img src="./img-laptop.jpg" alt="Лаптоп" width="370" height="294">
-                        <h2>Growing Business</h2>
-                        <p>Приложение</p>
+                        <h2 class="work-title">Growing Business</h2>
+                        <p class="work-text">Приложение</p>
                     </a>
                 </li>
             </ul>
@@ -124,17 +137,18 @@
 
     </main>
 
-    <footer>
-        <a href="">WebStudio</a>
+    <footer class="footer">
+        <a class="logo link" href=""><span class="web">Web</span><span class="studio">Studio</span></a>
         <address>
-            <ul>
-                <li><a href="https://goo.gl/maps/JE5rAZ1mxu6CQXRe6" target="_blank" rel="noopener noreferrer">г. Киев,
+            <ul class="list">
+                <li><a class="adress link" href="https://goo.gl/maps/JE5rAZ1mxu6CQXRe6" target="_blank"
+                        rel="noopener noreferrer">г. Киев,
                         пр-т Леси Украинки, 26</a></li>
                 <li>
-                    <a href="mailto:info@example.com">info@example.com</a>
+                    <a class="link" href="mailto:info@example.com">info@example.com</a>
                 </li>
                 <li>
-                    <a href="tel:+380991111111">+38 099 111 11 11</a>
+                    <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
                 </li>
             </ul>
         </address>
