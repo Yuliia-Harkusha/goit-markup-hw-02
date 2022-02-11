@@ -18,7 +18,7 @@ body {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.03em;
-  background-color: var(--main-bg-color);
+  /* background-color: var(--main-bg-color); */
 }
 
 .list {
@@ -63,6 +63,10 @@ body {
   letter-spacing: 0.02em;
 }
 
+.link.current {
+  color: var(--accent-text-color);
+}
+
 .auth-nav .link {
   color: var(--primary-text-color);
 }
@@ -88,7 +92,7 @@ body {
 
 .main-btn {
   cursor: pointer;
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
@@ -153,10 +157,6 @@ body {
 
 /* Футер */
 
-.footer .studio {
-  color: var(--white-text-color);
-}
-
 .footer .adress,
 .footer .link {
   font-style: normal;
@@ -179,13 +179,25 @@ body {
   color: var(--accent-text-color);
 }
 
+.footer > .logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-style: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.footer .studio {
+  color: var(--white-text-color);
+}
+
 /* Страница Портфолио */
 
 /* Конопки Фильтры */
 
 .btn-portfolio {
   cursor: pointer;
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
